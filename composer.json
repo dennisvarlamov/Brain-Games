@@ -7,5 +7,8 @@
             "email": "florida2013life@gmail.com"
         }
     ],
+    "bin": [
+      "bin/brain-games"
+    ],
     "require": {}
 }
