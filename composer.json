@@ -1,10 +1,13 @@
 {
     "name": "nglynis/php-project-lvl1",
     "description": "my-first-project",
+    "homepage": "https://github.com/nglynis/php-project-lvl1.git",
+    "license": "MIT",
     "authors": [
         {
             "name": "nglynis",
-            "email": "florida2013life@gmail.com"
+            "email": "florida2013life@gmail.com",
+	    "role": "Developer"
         }
     ],
     "bin": [
