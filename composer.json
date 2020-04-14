@@ -1,0 +1,11 @@
+{
+    "name": "dennis/php-project-lvl1",
+    "description": "my-first-project",
+    "authors": [
+        {
+            "name": "nglynis",
+            "email": "florida2013life@gmail.com"
+        }
+    ],
+    "require": {}
+}
