@@ -7,11 +7,18 @@
         {
             "name": "nglynis",
             "email": "florida2013life@gmail.com",
-	    "role": "Developer"
+	        "role": "Developer"
         }
     ],
     "bin": [
       "bin/brain-games"
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
+    "autoload": 
+    { "files":  [
+                "src/Cli.php"
+        ]
+    }
 }

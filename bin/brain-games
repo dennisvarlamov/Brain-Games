@@ -1,8 +1,6 @@
 #!/usr/bin/env php
-//print_r('Welcome to the Brain Games!');
 <?php
-  echo 'Welcome to the Brain Game!', PHP_EOL;
-  echo 'May I have your name? ';
-
-  $name = trim(fgets(STDIN));
-  echo "Hello, {$name}!", PHP_EOL;
+    require __DIR__ . '/../vendor/autoload.php';
+    use function BrainGames\Cli\run;
+    echo "Welcome to the Brain Games!";
+    run();
