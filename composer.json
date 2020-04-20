@@ -14,7 +14,10 @@
       "bin/brain-games"
     ],
     "scripts": {
-        "phpcs": "./vendor/squizlabs/php_codesniffer/bin/phpcs"
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf",
+        "phpunit": "phpunit",
+        "test": "phpunit tests"
       },
     "require": {
         "wp-cli/php-cli-tools": "^0.11.11"
