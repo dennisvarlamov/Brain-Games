@@ -1,1 +1,7 @@
 language: php
+
+script:
+  - make lint
+
+notifications:
+  email: florida2013life@gmail.com
