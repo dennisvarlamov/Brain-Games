@@ -17,7 +17,7 @@ function brainEven(string $name): int
         ) {
             line('Correct!');
         } else {
-            $correctAnswer = $answer === 'yes' ? 'no' : 'yes';
+            $correctAnswer = ($answer === 'yes') ? 'no' : 'yes';
             line(
                 '%s is wrong answer ;(. Correct answer was %s',
                 $answer,
