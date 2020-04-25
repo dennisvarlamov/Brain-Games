@@ -7,8 +7,7 @@ namespace BrainEven\Tmp;
 
 function brainEven(string $name): int
 {
-    $i = 0;
-    while ($i < 3) {
+    for ($i = 0; $i < 3; $i++) {
         $value = random_int(0, 100);
         line('Question: %d', $value);
         $answer = prompt('Your answer: ');
@@ -27,7 +26,6 @@ function brainEven(string $name): int
             line("Let's try again, %s!", $name);
             break;
         }
-        $i++;
     }
     return $i;
 }
