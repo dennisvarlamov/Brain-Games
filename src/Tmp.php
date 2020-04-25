@@ -14,23 +14,27 @@ function start()
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     while ($i < 3) {
-        $value = random_int(0,100);
+        $value = random_int(0, 100);
         line('Question: %d', $value);
         $answer = prompt('Your answer: ');
-        if ($value % 2 === 0 && $answer === 'yes' ||
-                $value % 2 === 1 && $answer === 'no') {
+        if (
+            $value % 2 === 0 && $answer === 'yes'
+                || $value % 2 === 1 && $answer === 'no'
+        ) {
             line('Correct!');
-        }
-        else {
+        } else {
             $correctAnswer = $answer === 'yes' ? 'no' : 'yes';
-            line('%s is wrong answer ;(. Correct answer was %s',
-                $answer, $correctAnswer);
+            line(
+                '%s is wrong answer ;(. Correct answer was %s',
+                $answer,
+                $correctAnswer
+            );
             line("Let's try again, %s!", $name);
             break;
         }
         $i++;
     }
     if ($i === 3) {
-        line('Congratulations, %s!',$name);
+        line('Congratulations, %s!', $name);
     }
 }
