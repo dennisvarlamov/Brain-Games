@@ -5,14 +5,10 @@ namespace BrainEven\Tmp;
   use function cli\line;
   use function cli\prompt;
 
-function start()
+function brainEven(string $name): int
 {
     $i = 0;
 
-    line('Welcome to the Brain Game!');
-    line('Answer "yes" if the number is even, otherwise answer "no".');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
     while ($i < 3) {
         $value = random_int(0, 100);
         line('Question: %d', $value);
@@ -34,7 +30,16 @@ function start()
         }
         $i++;
     }
-    if ($i === 3) {
+    return $i;
+}
+
+function start()
+{
+    line('Welcome to the Brain Game!');
+    line('Answer "yes" if the number is even, otherwise answer "no".');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+    if (brainEven($name) === 3) {
         line('Congratulations, %s!', $name);
     }
 }
