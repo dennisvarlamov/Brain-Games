@@ -14,6 +14,7 @@ use function BrainGames\CLi\printGameLost;
 use function BrainGames\Cli\printGameWin;
 use function BrainGames\GameEven\brainEven;
 use function BrainGames\GameCalc\brainCalc;
+use function BrainGames\GameGcd\brainGcd;
 use function cli\line;
 use function cli\prompt;
 
@@ -59,6 +60,9 @@ function getCorrectAnswer(string $gameName): string
             break;
         case 'calc':
             $correctAnswer =  brainCalc();
+            break;
+        case 'gcd':
+            $correctAnswer = brainGcd();
             break;
     }
     return $correctAnswer;
