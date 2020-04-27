@@ -15,8 +15,8 @@ function brainGcd() : string
 
 function getCorrectAnswer(int $firstArg, int $secondArg)
 {
-    $largeNumber = ($firstArg >= $secondArg) ? $firstArg : $secondArg;
-    $lowerNumber = ($firstArg <= $secondArg) ? $firstArg : $secondArg;
+    $largeNumber = max($firstArg, $secondArg);
+    $lowerNumber = min($firstArg, $secondArg);
     $balance = 1;
     $result = 0;
     while ($balance) {
@@ -24,5 +24,6 @@ function getCorrectAnswer(int $firstArg, int $secondArg)
         $largeNumber = $lowerNumber;
         $lowerNumber = $balance;
     }
+
     return $largeNumber;
 }
