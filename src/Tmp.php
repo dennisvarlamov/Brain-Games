@@ -1,42 +1,65 @@
 <?php
 
-namespace BrainEven\Tmp;
+namespace BrainGames\Tmp;
 
-  use function cli\line;
-  use function cli\prompt;
+use function BrainGames\Cli\printWelcome;
+use function BrainGames\Cli\printGameRules;
+use function BrainGames\Cli\getName;
+use function BrainGames\Cli\printHello;
+use function BrainGames\Cli\askQuestion;
+use function BrainGames\Cli\answerQuestion;
+use function BrainGames\Cli\printCorrect;
+use function BrainGames\Cli\wrongAnswer;
+use function BrainGames\CLi\printGameLost;
+use function BrainGames\Cli\printGameWin;
+use function BrainGames\GameEven\brainEven;
+use function BrainGames\GameCalc\brainCalc;
+use function cli\line;
+use function cli\prompt;
 
-function brainEven(string $name): int
+function brainGames(string $userName, string $gameName): int
 {
     for ($i = 0; $i < 3; $i++) {
-        $value = random_int(0, 100);
-        line('Question: %d', $value);
-        $answer = prompt('Your answer: ');
-        if (
-            $value % 2 === 0 && $answer === 'yes'
-                || $value % 2 === 1 && $answer === 'no'
-        ) {
-            line('Correct!');
+        $correctAnswer = getCorrectAnswer($gameName);
+        $answer = answerQuestion();
+        if (checkSolve($answer, $correctAnswer)) {
+            printCorrect();
         } else {
-            $correctAnswer = ($answer === 'yes') ? 'no' : 'yes';
-            line(
-                '%s is wrong answer ;(. Correct answer was %s',
-                $answer,
-                $correctAnswer
-            );
-            line("Let's try again, %s!", $name);
+            wrongAnswer($answer, $correctAnswer);
+            printGameLost($userName);
             break;
         }
     }
     return $i;
 }
 
-function start()
+function startGame(string $gameName): int
 {
-    line('Welcome to the Brain Game!');
-    line('Answer "yes" if the number is even, otherwise answer "no".');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    if (brainEven($name) === 3) {
-        line('Congratulations, %s!', $name);
+    printWelcome();
+    printGameRules($gameName);
+    $userName = getName();
+    printHello($userName);
+    if (brainGames($userName, $gameName) === 3) {
+        printGameWin($userName);
     }
+
+    return 0;
+}
+
+function checkSolve(string $answer, string $correctAnswer): bool
+{
+    return ($answer === $correctAnswer) ? true : false;
+}
+
+function getCorrectAnswer(string $gameName): string
+{
+    switch ($gameName) {
+        case 'even':
+            $correctAnswer =  brainEven();
+            break;
+        case 'calc':
+            $correctAnswer =  brainCalc();
+            break;
+    }
+    return $correctAnswer;
 }

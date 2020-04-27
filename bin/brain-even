@@ -11,6 +11,8 @@
         require_once $autoloadPathLocal;
     }
     
-    use function BrainEven\Tmp\start;
-    
-    start();
+    use function BrainGames\Tmp\startGame;
+
+    startGame('even');
+
+    return 0;
