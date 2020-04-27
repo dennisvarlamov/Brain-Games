@@ -4,7 +4,7 @@ namespace BrainGames\GameEven;
 
 use function BrainGames\Cli\askQuestion;
 
-function brainEven() : string
+function brainEven(): string
 {
     $value = random_int(0, 100);
     askQuestion($value);

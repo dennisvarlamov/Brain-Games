@@ -7,7 +7,7 @@ use function BrainGames\Cli\askQuestion;
 const MATH_OPS_COUNT = 5;
 const MATH_OPS = array('+', '-', '*', '/', '%');
 
-function brainCalc(): int
+function brainCalc(): string
 {
     $firstArg = random_int(0, 100);
     $secondArg = random_int(0,100);
@@ -17,7 +17,7 @@ function brainCalc(): int
     return getCorrectAnswer($firstArg, $secondArg, $operation);
 }
 
-function getCorrectAnswer(int $firstArg, int $secondArg, string $operation): int
+function getCorrectAnswer(int $firstArg, int $secondArg, string $operation): string
 {
     switch(MATH_OPS[$operation]) {
         case '+':

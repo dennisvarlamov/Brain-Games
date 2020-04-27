@@ -4,7 +4,7 @@ namespace BrainGames\GameGcd;
 
 use function BrainGames\Cli\askQuestion;
 
-function brainGcd() : string
+function brainGcd(): string
 {
     $firstArg = random_int(0, 100);
     $secondArg = random_int(0,100);
@@ -13,7 +13,7 @@ function brainGcd() : string
     return getCorrectAnswer($firstArg, $secondArg);
 }
 
-function getCorrectAnswer(int $firstArg, int $secondArg)
+function getCorrectAnswer(int $firstArg, int $secondArg): string
 {
     $largeNumber = max($firstArg, $secondArg);
     $lowerNumber = min($firstArg, $secondArg);

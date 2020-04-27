@@ -18,6 +18,8 @@ use function BrainGames\GameGcd\brainGcd;
 use function cli\line;
 use function cli\prompt;
 
+const  NAMBER_OF_GAME_STEPS = 3;
+
 function brainGames(string $userName, string $gameName): int
 {
     for ($i = 0; $i < 3; $i++) {
@@ -40,7 +42,7 @@ function startGame(string $gameName): int
     printGameRules($gameName);
     $userName = getName();
     printHello($userName);
-    if (brainGames($userName, $gameName) === 3) {
+    if (brainGames($userName, $gameName) === NAMBER_OF_GAME_STEPS) {
         printGameWin($userName);
     }
 
