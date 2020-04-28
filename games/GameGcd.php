@@ -18,7 +18,6 @@ function getCorrectAnswer(int $firstArg, int $secondArg): string
     $largeNumber = max($firstArg, $secondArg);
     $lowerNumber = min($firstArg, $secondArg);
     $balance = 1;
-    $result = 0;
     while ($balance) {
         $balance = $largeNumber % $lowerNumber;
         $largeNumber = $lowerNumber;
