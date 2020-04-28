@@ -14,15 +14,16 @@ function brainPrime(): string
 
 function getCorrectAnswer(int $value): string
 {
-    if ($value % 2 === 0 || $value === 1) {
+    if ($value === 1 || $value === 0) {
         return 'no';
     }
 
     $result = 1;
-
-    for ($i = 1, $middle = $value / 2; $i < $middle; $i++) {
+    $middle = ($value > 10) ? ($value / 2) : $value;
+    for ($i = 2; $i < $middle; $i++) {
         if ($value % $i === 0) {
             $result = $i;
+            break;
         }
     }
     return ($result > 1) ? 'no' : 'yes';

@@ -24,7 +24,7 @@ const  NAMBER_OF_GAME_STEPS = 3;
 
 function brainGames(string $userName, string $gameName): int
 {
-    for ($i = 0; $i < 3; $i++) {
+    for ($i = 0; $i <  NAMBER_OF_GAME_STEPS; $i++) {
         $correctAnswer = getCorrectAnswer($gameName);
         $answer = answerQuestion();
         if (checkSolve($answer, $correctAnswer)) {
