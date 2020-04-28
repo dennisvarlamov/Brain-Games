@@ -16,6 +16,7 @@ use function BrainGames\GameEven\brainEven;
 use function BrainGames\GameCalc\brainCalc;
 use function BrainGames\GameGcd\brainGcd;
 use function BrainGames\GameProgression\brainProgression;
+use function BrainGames\GamePrime\brainPrime;
 use function cli\line;
 use function cli\prompt;
 
@@ -69,6 +70,8 @@ function getCorrectAnswer(string $gameName): string
             break;
         case 'progression':
             $correctAnswer = brainProgression();
+        case 'prime':
+            $correctAnswer = brainPrime();
     }
     return $correctAnswer;
 }
