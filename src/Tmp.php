@@ -70,8 +70,10 @@ function getCorrectAnswer(string $gameName): string
             break;
         case 'progression':
             $correctAnswer = brainProgression();
+            break;
         case 'prime':
             $correctAnswer = brainPrime();
+            break;
     }
     return $correctAnswer;
 }
