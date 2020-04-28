@@ -25,6 +25,9 @@ function printGameRules(string $nameOfGame): int
         case 'gcd':
             line("Find the greatest common divisor of given numbers.");
             break;
+        case 'progression':
+            line("What number is missing in the progression?");
+            break;
     }
     return 0;
 }
