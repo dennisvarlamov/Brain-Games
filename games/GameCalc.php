@@ -4,8 +4,8 @@ namespace BrainGames\GameCalc;
 
 use function BrainGames\Cli\askQuestion;
 
-const MATH_OPS_COUNT = 5;
-const MATH_OPS = array('+', '-', '*', '/', '%');
+const MATH_OPS_COUNT = 4;
+const MATH_OPS = array('+', '-', '*', '%');
 
 function brainCalc(): string
 {
@@ -28,9 +28,6 @@ function getCorrectAnswer(int $firstArg, int $secondArg, string $operation): str
             break;
         case '*':
             $correctAnswer = $firstArg * $secondArg;
-            break;
-        case '/':
-            $correctAnswer = $firstArg / $secondArg;
             break;
         case '%':
             $correctAnswer = $firstArg % $secondArg;

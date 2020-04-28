@@ -17,3 +17,7 @@ NB: `~/.composer/vendor/bin/` should be in your `$PATH`
 
 [![installation asciicast](https://asciinema.org/a/f93nDJ01MYsg6fVR7k8Qi6vWw.svg)](https://asciinema.org/a/f93nDJ01MYsg6fVR7k8Qi6vWw)
 
+The `brain-calc` example run:
+
+
+
