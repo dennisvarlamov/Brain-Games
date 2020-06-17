@@ -1,6 +1,6 @@
 install:
 		@composer install
 lint:
-		@composer run-script phpcs -- --standard=PSR12 src bin games
+		@composer run-script phpcs -- --standard=PSR12 src bin src/games
 changeLintMistake:
 		@composer run-script phpcbf  -- --standard=PSR12 src bin src/games
