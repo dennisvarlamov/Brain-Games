@@ -30,11 +30,11 @@
     { "files":  [
                 "src/Cli.php",
                 "src/Tmp.php",
-                "games/GameEven.php",
-                "games/GameCalc.php",
-                "games/GameGcd.php",
-                "games/GameProgression.php",
-                "games/GamePrime.php"
+                "src/games/GameEven.php",
+                "src/games/GameCalc.php",
+                "src/games/GameGcd.php",
+                "src/games/GameProgression.php",
+                "src/games/GamePrime.php"
         ]
     },
     "require-dev": {

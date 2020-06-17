@@ -11,8 +11,8 @@
         require_once $autoloadPathLocal;
     }
     
-    use function BrainGames\Tmp\startGame;
+    use function BrainGames\GameGcd\startGcdGame;
 
-    startGame('gcd');
+    startGcdGame();
 
     return 0;

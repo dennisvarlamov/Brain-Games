@@ -12,28 +12,6 @@ function printWelcome(): int
     return 0;
 }
 
-function printGameRules(string $nameOfGame): int
-{
-    switch ($nameOfGame) {
-        case 'even':
-            line("Answer \"yes\" if the number is even, " .
-            "otherwise answer \"no\".");
-            break;
-        case 'calc':
-            line("What is the result of the expression?");
-            break;
-        case 'gcd':
-            line("Find the greatest common divisor of given numbers.");
-            break;
-        case 'progression':
-            line("What number is missing in the progression?");
-            break;
-        case 'prime':
-            line("Answer \"yes\" if given number is prime. Otherwise answer \"no\".");
-            break;
-    }
-    return 0;
-}
 
 function getNAme(): string
 {
@@ -49,12 +27,6 @@ function printHello(string $name): int
     return 0;
 }
 
-function askQuestion(string $question): int
-{
-    line("Question: {$question}");
-
-    return 0;
-}
 
 function answerQuestion(): string
 {

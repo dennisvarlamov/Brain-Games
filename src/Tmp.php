@@ -3,77 +3,36 @@
 namespace BrainGames\Tmp;
 
 use function BrainGames\Cli\printWelcome;
-use function BrainGames\Cli\printGameRules;
 use function BrainGames\Cli\getName;
 use function BrainGames\Cli\printHello;
-use function BrainGames\Cli\askQuestion;
 use function BrainGames\Cli\answerQuestion;
 use function BrainGames\Cli\printCorrect;
 use function BrainGames\Cli\wrongAnswer;
 use function BrainGames\CLi\printGameLost;
 use function BrainGames\Cli\printGameWin;
-use function BrainGames\GameEven\brainEven;
-use function BrainGames\GameCalc\brainCalc;
-use function BrainGames\GameGcd\brainGcd;
-use function BrainGames\GameProgression\brainProgression;
-use function BrainGames\GamePrime\brainPrime;
 use function cli\line;
 use function cli\prompt;
+use function cli\err;
 
 const  NAMBER_OF_GAME_STEPS = 3;
 
-function brainGames(string $userName, string $gameName): int
+function startGame($gameData, $gameRule): int
 {
-    for ($i = 0; $i <  NAMBER_OF_GAME_STEPS; $i++) {
-        $correctAnswer = getCorrectAnswer($gameName);
+    printWelcome();
+    line($gameRule);
+    $userName = getName();
+    printHello($userName);
+    foreach ($gameData as $questionGame => $correctAnswer) {
+        line("Question: %s", $questionGame);
         $answer = answerQuestion();
-        if (checkSolve($answer, $correctAnswer)) {
+        if ($answer === $correctAnswer) {
             printCorrect();
         } else {
             wrongAnswer($answer, $correctAnswer);
             printGameLost($userName);
-            break;
+            return 0;
         }
     }
-    return $i;
-}
-
-function startGame(string $gameName): int
-{
-    printWelcome();
-    printGameRules($gameName);
-    $userName = getName();
-    printHello($userName);
-    if (brainGames($userName, $gameName) === NAMBER_OF_GAME_STEPS) {
-        printGameWin($userName);
-    }
-
+    printGameWin($userName);
     return 0;
-}
-
-function checkSolve(string $answer, string $correctAnswer): bool
-{
-    return ($answer === $correctAnswer) ? true : false;
-}
-
-function getCorrectAnswer(string $gameName): string
-{
-    switch ($gameName) {
-        case 'even':
-            $correctAnswer =  brainEven();
-            break;
-        case 'calc':
-            $correctAnswer =  brainCalc();
-            break;
-        case 'gcd':
-            $correctAnswer = brainGcd();
-            break;
-        case 'progression':
-            $correctAnswer = brainProgression();
-            break;
-        case 'prime':
-            $correctAnswer = brainPrime();
-            break;
-    }
-    return $correctAnswer;
 }
