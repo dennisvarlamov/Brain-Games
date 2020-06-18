@@ -3,7 +3,6 @@
 namespace BrainGames\GamePrime;
 
 use function BrainGames\Tmp\startGame;
-
 const GAME_RULE = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
 use const BrainGames\Tmp\NAMBER_OF_GAME_STEPS;
 

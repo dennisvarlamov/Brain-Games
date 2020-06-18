@@ -11,8 +11,7 @@ use function BrainGames\Cli\wrongAnswer;
 use function BrainGames\CLi\printGameLost;
 use function BrainGames\Cli\printGameWin;
 use function cli\line;
-use function cli\prompt;
-use function cli\err;
+
 
 const  NAMBER_OF_GAME_STEPS = 3;
 

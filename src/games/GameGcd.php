@@ -3,7 +3,6 @@
 namespace BrainGames\GameGcd;
 
 use function BrainGames\Tmp\startGame;
-
 const GAME_RULE = "Find the greatest common divisor of given numbers.";
 use const BrainGames\Tmp\NAMBER_OF_GAME_STEPS;
 
