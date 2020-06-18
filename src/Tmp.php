@@ -12,7 +12,6 @@ use function BrainGames\CLi\printGameLost;
 use function BrainGames\Cli\printGameWin;
 use function cli\line;
 
-
 const  NAMBER_OF_GAME_STEPS = 3;
 
 function startGame($gameData, $gameRule): int

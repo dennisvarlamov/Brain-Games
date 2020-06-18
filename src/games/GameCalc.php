@@ -3,6 +3,7 @@
 namespace BrainGames\GameCalc;
 
 use function BrainGames\Tmp\startGame;
+
 const MATH_OPS_COUNT = 4;
 const MATH_OPS = array('+', '-', '*', '%');
 const GAME_RULE = "What is the result of the expression?";

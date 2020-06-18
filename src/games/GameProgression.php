@@ -3,6 +3,7 @@
 namespace BrainGames\GameProgression;
 
 use function BrainGames\Cli\askQuestion;
+
 const NUMBER_OF_PROGRESSION_ELEMENTS = 10;
 use function BrainGames\Tmp\startGame;
 const GAME_RULE = "What number is missing in the progression?";

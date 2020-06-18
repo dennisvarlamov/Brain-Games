@@ -3,6 +3,7 @@
 namespace BrainGames\GameEven;
 
 use function BrainGames\Tmp\startGame;
+
 const GAME_RULE = "Answer \"yes\" if the number is even, " . "otherwise answer \"no\".";
 use const BrainGames\Tmp\NAMBER_OF_GAME_STEPS;
 
