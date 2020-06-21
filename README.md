@@ -18,7 +18,7 @@ NB: `~/.composer/vendor/bin/` should be in your `$PATH`
 `export PATH="$PATH:$HOME/.config/composer/vendor/bin"`
 
 The `brain-calc` example run:
-[![installation asciicast](https://asciinema.org/connect/068a559b-1221-40b4-8a97-9498298dcc3a.svg)](https://asciinema.org/connect/068a559b-1221-40b4-8a97-9498298dcc3a)
+[![installation asciicast](https://asciinema.org/a/7XBu8o76EPwZ1dvvd5Ve8WikU.svg)](https://asciinema.org/a/7XBu8o76EPwZ1dvvd5Ve8WikU)
 
 The `brain-gcd` example run:
 [![installation asciicast](https://asciinema.org/a/dzqXdZvaVXljGIL4fc8iZs3qe.svg)](https://asciinema.org/a/dzqXdZvaVXljGIL4fc8iZs3qe)
