@@ -20,14 +20,18 @@ NB: `~/.composer/vendor/bin/` should be in your `$PATH`
 The `brain-calc` example run:
 [![installation asciicast](https://asciinema.org/a/7XBu8o76EPwZ1dvvd5Ve8WikU.svg)](https://asciinema.org/a/7XBu8o76EPwZ1dvvd5Ve8WikU)
 
+
 The `brain-even` example run:
 [![installation asciicast](https://asciinema.org/a/w3ygKiP1ODH7JgMRTt6Tt8eLa.svg)](https://asciinema.org/a/w3ygKiP1ODH7JgMRTt6Tt8eLa)
+
 
 The `brain-gcd` example run:
 [![installation asciicast](https://asciinema.org/a/0PjtK8Pb9IzB3XuPN4DNojh0Z.svg)](https://asciinema.org/a/0PjtK8Pb9IzB3XuPN4DNojh0Z)
 
+
 The `brain-prime` example run:
 [![installation asciicast](https://asciinema.org/a/dyybfhuZJemrIFxTSDoCTwmqb.svg)](https://asciinema.org/a/dyybfhuZJemrIFxTSDoCTwmqb)
+
 
 The `brain-progression` example run:
 [![installation asciicast]( https://asciinema.org/a/PvOrBaBzinF4JSJv8KT6IW4Mp.svg)](https://asciinema.org/a/PvOrBaBzinF4JSJv8KT6IW4Mp)
