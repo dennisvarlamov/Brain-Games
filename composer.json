@@ -7,7 +7,7 @@
         {
             "name": "nglynis",
             "email": "florida2013life@gmail.com",
-	        "role": "Developer"
+            "role": "Developer"
         }
     ],
     "bin": [
@@ -28,8 +28,7 @@
     },
     "autoload": 
     { "files":  [
-                "src/Cli.php",
-                "src/Tmp.php",
+                "src/Engine.php",
                 "src/games/GameEven.php",
                 "src/games/GameCalc.php",
                 "src/games/GameGcd.php",

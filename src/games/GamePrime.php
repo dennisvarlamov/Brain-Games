@@ -2,18 +2,19 @@
 
 namespace BrainGames\GamePrime;
 
-use function BrainGames\Tmp\startGame;
+use const BrainGames\Engine\NAMBER_OF_GAME_STEPS;
 
-const GAME_RULE = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
-use const BrainGames\Tmp\NAMBER_OF_GAME_STEPS;
+use function BrainGames\Engine\startGame;
+
+const GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function startPrimeGame(): string
 {
     for ($i = 0; $i < NAMBER_OF_GAME_STEPS; $i++) {
         $value = random_int(0, 100);
-        $askQuestion = ((string)$value);
+        $questionGame = ((string)$value);
         $correctAnswer = getCorrectAnswer($value);
-        $gameData[$askQuestion] = $correctAnswer;
+        $gameData[$questionGame] = $correctAnswer;
     }
     return  startGame($gameData, GAME_RULE);
 }
