@@ -8,7 +8,7 @@ use function cli\err;
 
 const  NAMBER_OF_GAME_STEPS = 3;
 
-function startGame($gameData, $gameRule): int
+function startGame($gameData, $gameRule)
 {
     line("Welcome to the Brain Games!");
     line($gameRule);
@@ -26,5 +26,4 @@ function startGame($gameData, $gameRule): int
         }
     }
     line("Congratulations, {$userName}!");
-    return 0;
 }

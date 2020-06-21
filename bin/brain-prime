@@ -14,5 +14,3 @@
     use function BrainGames\GamePrime\startPrimeGame;
 
     startPrimeGame();
-
-    return 0;

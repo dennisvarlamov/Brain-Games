@@ -14,5 +14,3 @@
     use function BrainGames\GameCalc\startCalcGame;
 
     startCalcGame();
-
-    return 0;

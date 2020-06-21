@@ -14,5 +14,4 @@
     use function BrainGames\GameGcd\startGcdGame;
 
     startGcdGame();
-
-    return 0;
+    

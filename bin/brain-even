@@ -14,5 +14,3 @@
     use function BrainGames\GameEven\startEvenGame;
 
     startEvenGame();
-
-    return 0;
