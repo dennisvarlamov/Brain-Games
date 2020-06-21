@@ -15,10 +15,10 @@
 
 NB: `~/.composer/vendor/bin/` should be in your `$PATH`
 
-[![installation asciicast](https://asciinema.org/a/f93nDJ01MYsg6fVR7k8Qi6vWw.svg)](https://asciinema.org/a/f93nDJ01MYsg6fVR7k8Qi6vWw)
+`export PATH="$PATH:$HOME/.config/composer/vendor/bin"`
 
 The `brain-calc` example run:
-[![installation asciicast](https://asciinema.org/a/8KXVFlVhIsJrm1RIE0wq5YfFe.svg)](https://asciinema.org/a/8KXVFlVhIsJrm1RIE0wq5YfFe)
+[![installation asciicast](https://asciinema.org/connect/068a559b-1221-40b4-8a97-9498298dcc3a.svg)](https://asciinema.org/connect/068a559b-1221-40b4-8a97-9498298dcc3a)
 
 The `brain-gcd` example run:
 [![installation asciicast](https://asciinema.org/a/dzqXdZvaVXljGIL4fc8iZs3qe.svg)](https://asciinema.org/a/dzqXdZvaVXljGIL4fc8iZs3qe)
