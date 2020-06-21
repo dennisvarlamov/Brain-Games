@@ -2,9 +2,9 @@
 
 namespace BrainGames\GameEven;
 
-use const BrainGames\Engine\NAMBER_OF_GAME_STEPS;
-
 use function BrainGames\Engine\startGame;
+
+use const BrainGames\Engine\NAMBER_OF_GAME_STEPS;
 
 const GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".';
 

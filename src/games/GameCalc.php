@@ -2,9 +2,9 @@
 
 namespace BrainGames\GameCalc;
 
-use const BrainGames\Engine\NAMBER_OF_GAME_STEPS;
-
 use function BrainGames\Engine\startGame;
+
+use const BrainGames\Engine\NAMBER_OF_GAME_STEPS;
 
 const MATH_OPS = array('+', '-', '*', '%');
 const GAME_RULE = "What is the result of the expression?";

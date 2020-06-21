@@ -2,9 +2,9 @@
 
 namespace BrainGames\GameProgression;
 
-use const BrainGames\Engine\NAMBER_OF_GAME_STEPS;
-
 use function BrainGames\Engine\startGame;
+
+use const BrainGames\Engine\NAMBER_OF_GAME_STEPS;
 
 const PROGRESSION_LENGTH = 10;
 const GAME_RULE = "What number is missing in the progression?";
