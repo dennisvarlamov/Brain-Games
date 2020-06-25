@@ -4,34 +4,30 @@ namespace BrainGames\GamePrime;
 
 use function BrainGames\Engine\startGame;
 
-use const BrainGames\Engine\NAMBER_OF_GAME_STEPS;
+use const BrainGames\Engine\NUMBER_OF_GAME_STEPS;
 
 const GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function startPrimeGame(): string
+function startPrimeGame()
 {
-    for ($i = 0; $i < NAMBER_OF_GAME_STEPS; $i++) {
+    for ($i = 0; $i < NUMBER_OF_GAME_STEPS; $i++) {
         $value = random_int(0, 100);
-        $questionGame = ((string)$value);
-        $correctAnswer = getCorrectAnswer($value);
-        $gameData[$questionGame] = $correctAnswer;
+        $gameQuestion = ((string)$value);
+        $correctAnswer = isPrime($value) ? 'yes' : 'no';
+        $gameData[$gameQuestion] = $correctAnswer;
     }
     return  startGame($gameData, GAME_RULE);
 }
 
-function getCorrectAnswer(int $value): string
+function isPrime($operand): bool
 {
-    if ($value === 1 || $value === 0) {
-        return 'no';
+    if ($operand <= 1) {
+        return false;
     }
-
-    $result = 1;
-    $middle = ($value > 10) ? ($value / 2) : $value;
-    for ($i = 2; $i < $middle; $i++) {
-        if ($value % $i === 0) {
-            $result = $i;
-            break;
+    for ($divisor = 2; $divisor <= $operand / 2; $divisor++) {
+        if ($operand % $divisor === 0) {
+            return false;
         }
     }
-    return ($result > 1) ? 'no' : 'yes';
+    return true;
 }

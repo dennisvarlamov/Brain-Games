@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function cli\err;
 
-const  NAMBER_OF_GAME_STEPS = 3;
+const  NUMBER_OF_GAME_STEPS = 3;
 
 function startGame($gameData, $gameRule)
 {
@@ -22,7 +22,7 @@ function startGame($gameData, $gameRule)
         } else {
             err("{$answer} is wrong answer ;(. Correct answer was {$correctAnswer}");
             line("Let's try again, {$userName}");
-            return 0;
+            exit;
         }
     }
     line("Congratulations, {$userName}!");
