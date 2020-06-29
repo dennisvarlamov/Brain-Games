@@ -11,6 +11,6 @@
         require_once $autoloadPathLocal;
     }
     
-    use function BrainGames\GameProgression\startProgressionGame;
+    use function BrainGames\Progression\startProgressionGame;
 
     startProgressionGame();

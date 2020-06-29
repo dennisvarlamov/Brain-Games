@@ -19,23 +19,23 @@ NB: `~/.composer/vendor/bin/` should be in your `$PATH`
 
 The `brain-calc` example run:
 
-[![installation asciicast](https://asciinema.org/a/7XBu8o76EPwZ1dvvd5Ve8WikU.svg)](https://asciinema.org/a/7XBu8o76EPwZ1dvvd5Ve8WikU)
+[![installation asciicast](https://asciinema.org/a/lnbCJWYoz2Ml3E3l0vDFSD2Sh.svg)](https://asciinema.org/a/lnbCJWYoz2Ml3E3l0vDFSD2Sh)
 
 The `brain-even` example run:
 
-[![installation asciicast](https://asciinema.org/a/w3ygKiP1ODH7JgMRTt6Tt8eLa.svg)](https://asciinema.org/a/w3ygKiP1ODH7JgMRTt6Tt8eLa)
+[![installation asciicast](https://asciinema.org/a/wqTTwmrbxZjDUTuR1lny2uWLm.svg)](https://asciinema.org/a/wqTTwmrbxZjDUTuR1lny2uWLm)
 
 The `brain-gcd` example run:
 
-[![installation asciicast](https://asciinema.org/a/0PjtK8Pb9IzB3XuPN4DNojh0Z.svg)](https://asciinema.org/a/0PjtK8Pb9IzB3XuPN4DNojh0Z)
+[![installation asciicast](https://asciinema.org/a/dGsF59Y3tkvi0djDPvMO3JM4g.svg)](https://asciinema.org/a/dGsF59Y3tkvi0djDPvMO3JM4g)
 
 The `brain-prime` example run:
 
-[![installation asciicast](https://asciinema.org/a/dyybfhuZJemrIFxTSDoCTwmqb.svg)](https://asciinema.org/a/dyybfhuZJemrIFxTSDoCTwmqb)
+[![installation asciicast](https://asciinema.org/a/iFlo5NsBAQhx9UmnzEEC6MAEd.svg)](https://asciinema.org/a/iFlo5NsBAQhx9UmnzEEC6MAEd)
 
 The `brain-progression` example run:
 
-[![installation asciicast]( https://asciinema.org/a/PvOrBaBzinF4JSJv8KT6IW4Mp.svg)](https://asciinema.org/a/PvOrBaBzinF4JSJv8KT6IW4Mp)
+[![installation asciicast]( https://asciinema.org/a/64sj3U4nimEK6fKSeybBLBw3K.svg)](https://asciinema.org/a/64sj3U4nimEK6fKSeybBLBw3K)
 
 
 

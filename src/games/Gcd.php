@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\GameGcd;
+namespace BrainGames\Gcd;
 
-use function BrainGames\Engine\startGame;
+use function BrainGames\Engine\playGame;
 
 use const BrainGames\Engine\NUMBER_OF_GAME_STEPS;
 
@@ -13,11 +13,11 @@ function startGcdGame()
     for ($i = 0; $i < NUMBER_OF_GAME_STEPS; $i++) {
         $firstArg = random_int(0, 100);
         $secondArg = random_int(0, 100);
-        $gameQuestion = ((string)"{$firstArg} {$secondArg}");
+        $gameQuestion = "{$firstArg} {$secondArg}";
         $correctAnswer =  (string)(gcd($firstArg, $secondArg));
         $gameData[$gameQuestion] = $correctAnswer;
     }
-    return startGame($gameData, GAME_RULE);
+    return playGame($gameData, GAME_RULE);
 }
 
 

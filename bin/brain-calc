@@ -11,6 +11,6 @@
         require_once $autoloadPathLocal;
     }
     
-    use function BrainGames\GameCalc\startCalcGame;
+    use function BrainGames\Calc\startCalcGame;
 
     startCalcGame();

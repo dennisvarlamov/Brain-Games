@@ -11,6 +11,6 @@
         require_once $autoloadPathLocal;
     }
     
-    use function BrainGames\GamePrime\startPrimeGame;
+    use function BrainGames\Prime\startPrimeGame;
 
     startPrimeGame();

@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\GameEven;
+namespace BrainGames\Even;
 
-use function BrainGames\Engine\startGame;
+use function BrainGames\Engine\playGame;
 
 use const BrainGames\Engine\NUMBER_OF_GAME_STEPS;
 
@@ -17,5 +17,5 @@ function startEvenGame()
         $gameData[$gameQuestion] = $correctAnswer;
     }
 
-    return startGame($gameData, GAME_RULE);
+    return playGame($gameData, GAME_RULE);
 }

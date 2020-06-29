@@ -29,11 +29,11 @@
     "autoload": 
     { "files":  [
                 "src/Engine.php",
-                "src/games/GameEven.php",
-                "src/games/GameCalc.php",
-                "src/games/GameGcd.php",
-                "src/games/GameProgression.php",
-                "src/games/GamePrime.php"
+                "src/games/Even.php",
+                "src/games/Calc.php",
+                "src/games/Gcd.php",
+                "src/games/Progression.php",
+                "src/games/Prime.php"
         ]
     },
     "require-dev": {
