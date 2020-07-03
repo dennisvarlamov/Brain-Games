@@ -11,6 +11,6 @@
         require_once $autoloadPathLocal;
     }
     
-    use function BrainGames\Even\startEvenGame;
+    use function BrainGames\Games\Even\startEvenGame;
 
     startEvenGame();
